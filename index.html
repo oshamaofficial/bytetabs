@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteTabs — Premium Digital Product Studio & Technology Agency</title>
+  <meta name="description" content="ByteTabs is a high-end digital product studio and technology agency crafting bespoke web design, web development, app development, and scalable SaaS products.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assest/images/logo-icon.png">
+  
+  <!-- Google Fonts Preconnect & Quicksand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assest/css/style.css">
+</head>
+<body>
+
+  <!-- Header Section Start -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="header-logo-link" aria-label="ByteTabs Homepage" title="ByteTabs Homepage">
+        <img src="assest/images/logo-icon.png" alt="ByteTabs Logo Icon" class="img-responsive header-logo-icon">
+        <span class="header-logo-text"><span class="logo-byte">Byte</span><span class="logo-tabs">Tabs</span></span>
+      </a>
+
+      <!-- Desktop Primary Navigation -->
+      <nav class="header-nav" aria-label="Main Navigation">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a href="#services" class="header-nav-link" title="Explore ByteTabs Services">
+              <span>Services</span>
+              <svg class="nav-caret" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M1 1l4 4 4-4"/>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#work" class="header-nav-link" title="View Selected Work & Case Studies">
+              <span>Work</span>
+              <svg class="nav-caret" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M1 1l4 4 4-4"/>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="about.html" class="header-nav-link" title="Learn More About ByteTabs">
+              <span>About</span>
+              <svg class="nav-caret" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M1 1l4 4 4-4"/>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#process" class="header-nav-link" title="Our Product Development Process">
+              <span>Process</span>
+              <svg class="nav-caret" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M1 1l4 4 4-4"/>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#insights" class="header-nav-link" title="Read Tech Insights & Articles">
+              <span>Insights</span>
+              <svg class="nav-caret" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M1 1l4 4 4-4"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions (CTA + Mobile Toggle) -->
+      <div class="header-actions">
+        <!-- Desktop Primary CTA -->
+        <a href="#contact" class="header-cta-btn" title="Let's Talk - Get in Touch with ByteTabs">
+          <span>Let's Talk</span>
+          <svg class="cta-arrow" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavOverlay">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Navigation Overlay & Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true" data-lenis-prevent>
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+    <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+      
+      <!-- Mobile Top Bar -->
+      <div class="mobile-nav-top">
+        <a href="index.html" class="header-logo-link" aria-label="ByteTabs Homepage" title="ByteTabs Homepage">
+          <img src="assest/images/logo-icon.png" alt="ByteTabs Logo Icon" class="img-responsive header-logo-icon">
+          <span class="header-logo-text"><span class="logo-byte">Byte</span><span class="logo-tabs">Tabs</span></span>
+        </a>
+        <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Links -->
+      <nav class="mobile-nav-menu" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <a href="#services" class="mobile-nav-link" title="Navigate to Services">
+              <span class="mobile-nav-index">01</span>
+              <span class="mobile-nav-text">Services</span>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#work" class="mobile-nav-link" title="Navigate to Work">
+              <span class="mobile-nav-index">02</span>
+              <span class="mobile-nav-text">Work</span>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="about.html" class="mobile-nav-link" title="Navigate to About">
+              <span class="mobile-nav-index">03</span>
+              <span class="mobile-nav-text">About</span>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#process" class="mobile-nav-link" title="Navigate to Process">
+              <span class="mobile-nav-index">04</span>
+              <span class="mobile-nav-text">Process</span>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#insights" class="mobile-nav-link" title="Navigate to Insights">
+              <span class="mobile-nav-index">05</span>
+              <span class="mobile-nav-text">Insights</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Footer & Studio Meta -->
+      <div class="mobile-nav-footer">
+        <a href="#contact" class="mobile-cta-btn" title="Let's Talk - Contact ByteTabs">
+          <span>Let's Talk</span>
+          <svg class="cta-arrow" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+        <div class="mobile-nav-meta">
+          <span class="meta-label">Digital Product Studio</span>
+          <a href="mailto:hello@bytetabs.com" class="meta-email" title="Send an Email to hello@bytetabs.com">hello@bytetabs.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Header Section End -->
+
+  <!-- Main Content Area -->
+  <main>
+    
+    <!-- Hero Section Start -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-grid">
+          
+          <!-- Hero Left Column: Editorial & Conversion Copy (3-Line Headline & 2-Line Description) -->
+          <div class="hero-content-col">
+            <h1 class="hero-title">
+              <span class="hero-title-line"><span class="hero-title-line-inner">We Offer Expert</span></span>
+              <span class="hero-title-line"><span class="hero-title-line-inner">Technology Services</span></span>
+              <span class="hero-title-line"><span class="hero-title-line-inner">from ByteTabs</span></span>
+            </h1>
+            
+            <p class="hero-description">
+              We engineer scalable web platforms, mobile applications, and bespoke digital products to accelerate business growth.
+            </p>
+            
+            <div class="hero-actions">
+              <a href="#contact" class="hero-cta-btn" title="Get a Free Consultation with ByteTabs">
+                <span>Get a Free Consultation</span>
+                <svg class="cta-arrow-up" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3.5 12.5l9-9M4 3.5h8.5v8.5"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Concentric Aura Rings (Media reserved empty as requested) -->
+          <div class="hero-visual-col" aria-label="Visual Display Area">
+            <!-- Concentric circular aura ripple rings radiating outward -->
+            <div class="hero-aura-rings" aria-hidden="true">
+              <div class="aura-ring ring-1"></div>
+              <div class="aura-ring ring-2"></div>
+              <div class="aura-ring ring-3"></div>
+              <div class="aura-ring ring-4"></div>
+              <div class="aura-ring ring-5"></div>
+            </div>
+            
+            <!-- Hero Media Slot: Interactive Animated Services Stack Deck -->
+            <!-- Hero Media Slot: 3D Coverflow Services Showcase -->
+            <div class="hero-media-slot" id="heroMediaSlot">
+              <div class="services-coverflow" id="servicesCoverFlow" aria-label="ByteTabs Services Showcase">
+
+                <!-- 3D Coverflow Viewport -->
+                <div class="coverflow-viewport" id="coverflowViewport">
+                  
+                  <!-- Card 01: Social Media Marketing -->
+                  <a href="#service-social-media" class="coverflow-card" data-index="0" aria-label="Social Media Marketing" title="Explore Social Media Marketing Services">
+                    <div class="coverflow-card-media">
+                      <img src="assest/images/Social%20Media%20Marketing.jpg" alt="Social Media Marketing" class="img-responsive coverflow-card-img" loading="eager" width="1200" height="896">
+                      <div class="coverflow-card-overlay"></div>
+                    </div>
+                    <div class="coverflow-card-caption">
+                      <h3 class="coverflow-card-title">Social Media Marketing</h3>
+                      <p class="coverflow-card-desc">Audience expansion, viral content & organic community growth across all platforms.</p>
+                    </div>
+                  </a>
+
+                  <!-- Card 02: Influencer Marketing -->
+                  <a href="#service-influencer" class="coverflow-card" data-index="1" aria-label="Influencer Marketing" title="Explore Influencer Marketing Services">
+                    <div class="coverflow-card-media">
+                      <img src="assest/images/Influencer%20Marketing.jpg" alt="Influencer Marketing" class="img-responsive coverflow-card-img" loading="lazy" width="1200" height="896">
+                      <div class="coverflow-card-overlay"></div>
+                    </div>
+                    <div class="coverflow-card-caption">
+                      <h3 class="coverflow-card-title">Influencer Marketing</h3>
+                      <p class="coverflow-card-desc">Strategic creator partnerships driving authentic brand reach and customer conversions.</p>
+                    </div>
+                  </a>
+
+                  <!-- Card 03: Performance Marketing -->
+                  <a href="#service-performance" class="coverflow-card" data-index="2" aria-label="Performance Marketing" title="Explore Performance Marketing Services">
+                    <div class="coverflow-card-media">
+                      <img src="assest/images/Performance%20Marketing.jpg" alt="Performance Marketing" class="img-responsive coverflow-card-img" loading="lazy" width="1200" height="896">
+                      <div class="coverflow-card-overlay"></div>
+                    </div>
+                    <div class="coverflow-card-caption">
+                      <h3 class="coverflow-card-title">Performance Marketing</h3>
+                      <p class="coverflow-card-desc">Data-driven paid advertising optimized for maximum return on ad spend.</p>
+                    </div>
+                  </a>
+
+                  <!-- Card 04: SEO & Google Marketing -->
+                  <a href="#service-seo" class="coverflow-card" data-index="3" aria-label="SEO & Google Marketing" title="Explore SEO & Google Marketing Services">
+                    <div class="coverflow-card-media">
+                      <img src="assest/images/SEO%20&%20Google%20Marketing.jpg" alt="SEO & Google Marketing" class="img-responsive coverflow-card-img" loading="lazy" width="1200" height="896">
+                      <div class="coverflow-card-overlay"></div>
+                    </div>
+                    <div class="coverflow-card-caption">
+                      <h3 class="coverflow-card-title">SEO & Google Marketing</h3>
+                      <p class="coverflow-card-desc">First-page Google rankings and high-intent organic search visibility that converts.</p>
+                    </div>
+                  </a>
+
+                  <!-- Card 05: Website & App Development -->
+                  <a href="#service-web-app" class="coverflow-card" data-index="4" aria-label="Website & App Development" title="Explore Website & App Development Services">
+                    <div class="coverflow-card-media">
+                      <img src="assest/images/Website%20&%20App%20Development.jpg" alt="Website & App Development" class="img-responsive coverflow-card-img" loading="lazy" width="1200" height="896">
+                      <div class="coverflow-card-overlay"></div>
+                    </div>
+                    <div class="coverflow-card-caption">
+                      <h3 class="coverflow-card-title">Website & App Development</h3>
+                      <p class="coverflow-card-desc">High-speed digital platforms and mobile applications engineered to scale effortlessly.</p>
+                    </div>
+                  </a>
+
+                  <!-- Card 06: ERP & SaaS Solutions -->
+                  <a href="#service-erp-saas" class="coverflow-card" data-index="5" aria-label="ERP & SaaS Solutions" title="Explore ERP & SaaS Solutions">
+                    <div class="coverflow-card-media">
+                      <img src="assest/images/ERP%20&%20SaaS%20Solutions.jpg" alt="ERP & SaaS Solutions" class="img-responsive coverflow-card-img" loading="lazy" width="1200" height="896">
+                      <div class="coverflow-card-overlay"></div>
+                    </div>
+                    <div class="coverflow-card-caption">
+                      <h3 class="coverflow-card-title">ERP & SaaS Solutions</h3>
+                      <p class="coverflow-card-desc">School, Hospital & Custom Business ERP software built for seamless operations.</p>
+                    </div>
+                  </a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Laptop Showcase Section Start -->
+    <section class="laptop-showcase-section" id="laptopShowcaseSection" aria-label="Engineered Digital Solutions">
+      <div class="container showcase-container">
+        <div class="showcase-grid">
+
+          <!-- Left Column: Interactive Scroll-Driven Opening Laptop Stage -->
+          <div class="showcase-visual-col" id="showcaseVisualCol">
+            <div class="laptop-visual-wrapper">
+              <div class="laptop-stage" id="laptopStage" aria-label="Engineered Digital Solutions">
+                
+                <!-- Ambient Backdrop Glow -->
+                <div class="laptop-ambient-glow" aria-hidden="true"></div>
+
+                <!-- Ground Contact Shadow -->
+                <div class="laptop-ground-shadow" id="laptopGroundShadow" aria-hidden="true"></div>
+
+                <!-- Open Laptop Floating Frame -->
+                <div class="laptop-frame" id="laptopFrame">
+                  <img 
+                    src="assest/images/laptop-open.png" 
+                    alt="Bytetabs Engineered Web & Mobile Solutions" 
+                    class="img-responsive laptop-img" 
+                    loading="eager" 
+                    width="1024" 
+                    height="692"
+                  >
+                  <!-- Subtle Glass Reflection Sheen -->
+                  <div class="laptop-screen-sheen" aria-hidden="true"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Strategic Digital Solutions & Editorial Content -->
+          <div class="showcase-content-col" id="showcaseContentCol">
+            
+            <div class="showcase-header">
+              <h2 class="showcase-title">
+                Engineered for speed, scale, and high-impact digital growth.
+              </h2>
+            </div>
+
+            <!-- Body Paragraphs Replacing Metric Boxes -->
+            <div class="showcase-body">
+              <p>
+                From custom enterprise web architectures to intuitive digital products, our team engineers robust solutions tailored to drive measurable business impact. Every application is optimized for sub-second load times, responsive fluid layouts, and rock-solid reliability under peak load.
+              </p>
+              <p>
+                We merge human-first UI/UX strategy with modern full-stack development, transforming complex business requirements into elegant digital experiences that elevate your brand and accelerate user conversion.
+              </p>
+            </div>
+
+            <div class="showcase-footer-action">
+              <a href="#contact" class="hero-cta-btn showcase-cta-btn" title="Start Your Digital Project with ByteTabs">
+                <span>Start Your Digital Project</span>
+                <svg class="cta-arrow-up" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3.5 12.5l9-9M4 3.5h8.5v8.5"/>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Laptop Showcase Section End -->
+
+    <!-- Services Section Start -->
+    <section class="services-section" id="services" aria-label="Our Core Services">
+      <div class="container services-container">
+        
+        <!-- Services Section Header -->
+        <div class="services-header">
+          <div class="services-header-row">
+            <div class="services-header-title-col">
+              <h2 class="services-title">
+                Digital Services Engineered for Category Leadership.
+              </h2>
+            </div>
+            <div class="services-header-desc-col">
+              <p class="services-subtitle">
+                We merge strategic branding, performance marketing, and full-stack software development to build resilient digital platforms that drive sustainable growth.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services 6-Card Grid -->
+        <div class="services-grid" id="servicesGrid">
+          
+          <!-- Card 01: Social Media Marketing -->
+          <article class="service-card" id="service-social-media" data-service="1">
+            <div class="service-card-inner">
+              <div class="service-card-media">
+                <img 
+                  src="assest/images/Social%20Media%20Marketing.jpg" 
+                  alt="Social Media Marketing" 
+                  class="img-responsive service-card-img" 
+                  loading="lazy" 
+                  width="1200" 
+                  height="896"
+                >
+              </div>
+              
+              <!-- Bottom Chamfered Brand Plate -->
+              <div class="service-card-plate">
+                <h3>Social Media Marketing</h3>
+                <p>High-impact content creation, viral campaigns, and active community management to build loyal brand followings.</p>
+              </div>
+              <a href="#contact" class="service-card-hitbox" aria-label="Inquire about Social Media Marketing" title="Inquire about Social Media Marketing"></a>
+            </div>
+          </article>
+
+          <!-- Card 02: Influencer Marketing -->
+          <article class="service-card" id="service-influencer" data-service="2">
+            <div class="service-card-inner">
+              <div class="service-card-media">
+                <img 
+                  src="assest/images/Influencer%20Marketing.jpg" 
+                  alt="Influencer Marketing" 
+                  class="img-responsive service-card-img" 
+                  loading="lazy" 
+                  width="1200" 
+                  height="896"
+                >
+              </div>
+              
+              <div class="service-card-plate">
+                <h3>Influencer Marketing</h3>
+                <p>Strategic creator partnerships and vetted talent collaborations that deliver genuine reach and high conversion.</p>
+              </div>
+              <a href="#contact" class="service-card-hitbox" aria-label="Inquire about Influencer Marketing" title="Inquire about Influencer Marketing"></a>
+            </div>
+          </article>
+
+          <!-- Card 03: Performance Marketing -->
+          <article class="service-card" id="service-performance" data-service="3">
+            <div class="service-card-inner">
+              <div class="service-card-media">
+                <img 
+                  src="assest/images/Performance%20Marketing.jpg" 
+                  alt="Performance Marketing" 
+                  class="img-responsive service-card-img" 
+                  loading="lazy" 
+                  width="1200" 
+                  height="896"
+                >
+              </div>
+              
+              <div class="service-card-plate">
+                <h3>Performance Marketing</h3>
+                <p>Precision-targeted paid advertising across Meta, Google, and TikTok optimized for maximum return on ad spend.</p>
+              </div>
+              <a href="#contact" class="service-card-hitbox" aria-label="Inquire about Performance Marketing" title="Inquire about Performance Marketing"></a>
+            </div>
+          </article>
+
+          <!-- Card 04: SEO & Google Marketing -->
+          <article class="service-card" id="service-seo" data-service="4">
+            <div class="service-card-inner">
+              <div class="service-card-media">
+                <img 
+                  src="assest/images/SEO%20&%20Google%20Marketing.jpg" 
+                  alt="SEO & Google Marketing" 
+                  class="img-responsive service-card-img" 
+                  loading="lazy" 
+                  width="1200" 
+                  height="896"
+                >
+              </div>
+              
+              <div class="service-card-plate">
+                <h3>SEO & Google Marketing</h3>
+                <p>First-page organic rankings and high-intent keyword strategies to dominate search results and capture customers.</p>
+              </div>
+              <a href="#contact" class="service-card-hitbox" aria-label="Inquire about SEO & Google Marketing" title="Inquire about SEO & Google Marketing"></a>
+            </div>
+          </article>
+
+          <!-- Card 05: Website & App Development -->
+          <article class="service-card" id="service-web-app" data-service="5">
+            <div class="service-card-inner">
+              <div class="service-card-media">
+                <img 
+                  src="assest/images/Website%20&%20App%20Development.jpg" 
+                  alt="Website & App Development" 
+                  class="img-responsive service-card-img" 
+                  loading="lazy" 
+                  width="1200" 
+                  height="896"
+                >
+              </div>
+              
+              <div class="service-card-plate">
+                <h3>Website & App Development</h3>
+                <p>High-velocity digital platforms and bespoke mobile applications engineered to scale seamlessly across devices.</p>
+              </div>
+              <a href="#contact" class="service-card-hitbox" aria-label="Inquire about Website & App Development" title="Inquire about Website & App Development"></a>
+            </div>
+          </article>
+
+          <!-- Card 06: ERP & SaaS Solutions -->
+          <article class="service-card" id="service-erp-saas" data-service="6">
+            <div class="service-card-inner">
+              <div class="service-card-media">
+                <img 
+                  src="assest/images/ERP%20&%20SaaS%20Solutions.jpg" 
+                  alt="ERP & SaaS Solutions" 
+                  class="img-responsive service-card-img" 
+                  loading="lazy" 
+                  width="1200" 
+                  height="896"
+                >
+              </div>
+              
+              <div class="service-card-plate">
+                <h3>ERP & SaaS Solutions</h3>
+                <p>Enterprise resource planning and custom business SaaS architectures designed to automate critical workflows.</p>
+              </div>
+              <a href="#contact" class="service-card-hitbox" aria-label="Inquire about ERP & SaaS Solutions" title="Inquire about ERP & SaaS Solutions"></a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Clients Section Start -->
+    <section class="clients-section" id="clients" aria-label="Our Clients and Strategic Partners">
+      <div class="container clients-container">
+        
+        <!-- Clients Section Header -->
+        <div class="clients-header">
+          <h2>Empowering Visionary Brands & High-Growth Enterprises.</h2>
+        </div>
+
+      </div>
+
+      <!-- Marquee Viewport with Edge Fade Mask -->
+      <div class="clients-marquee-viewport">
+
+        <!-- Track 01: Scrolling Forward (Left) -->
+        <div class="clients-marquee-track track-forward" aria-label="Client logos marquee row 1">
+          <!-- Primary Group -->
+          <div class="clients-marquee-group">
+            <a href="#contact" class="client-card" title="Partnered with NextGen CA — Inquire with ByteTabs">
+              <img src="assest/images/client (1).jpg" alt="NextGen CA Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with CEO Thoughts — Inquire with ByteTabs">
+              <img src="assest/images/client (2).jpg" alt="CEO Thoughts Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with Danlite Tools Technician — Inquire with ByteTabs">
+              <img src="assest/images/client (3).jpg" alt="Danlite Tools Technician Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with RHC Multispeciality Hospital — Inquire with ByteTabs">
+              <img src="assest/images/client (4).jpg" alt="RHC Multispeciality Hospital Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with Gyan World Class Smart School — Inquire with ByteTabs">
+              <img src="assest/images/client (5).jpg" alt="Gyan World Class Smart School Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with Sight Care Eye Hospital — Inquire with ByteTabs">
+              <img src="assest/images/client (6).jpg" alt="Sight Care Eye Hospital Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with Suvera Fresh — Inquire with ByteTabs">
+              <img src="assest/images/client (7).jpg" alt="Suvera Fresh Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with Tricusp Diagnostics — Inquire with ByteTabs">
+              <img src="assest/images/client (8).jpg" alt="Tricusp Diagnostics Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Duplicate Group for Seamless Infinite Loop -->
+          <div class="clients-marquee-group" aria-hidden="true">
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with NextGen CA — Inquire with ByteTabs">
+              <img src="assest/images/client (1).jpg" alt="NextGen CA Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with CEO Thoughts — Inquire with ByteTabs">
+              <img src="assest/images/client (2).jpg" alt="CEO Thoughts Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with Danlite Tools Technician — Inquire with ByteTabs">
+              <img src="assest/images/client (3).jpg" alt="Danlite Tools Technician Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with RHC Multispeciality Hospital — Inquire with ByteTabs">
+              <img src="assest/images/client (4).jpg" alt="RHC Multispeciality Hospital Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with Gyan World Class Smart School — Inquire with ByteTabs">
+              <img src="assest/images/client (5).jpg" alt="Gyan World Class Smart School Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with Sight Care Eye Hospital — Inquire with ByteTabs">
+              <img src="assest/images/client (6).jpg" alt="Sight Care Eye Hospital Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with Suvera Fresh — Inquire with ByteTabs">
+              <img src="assest/images/client (7).jpg" alt="Suvera Fresh Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with Tricusp Diagnostics — Inquire with ByteTabs">
+              <img src="assest/images/client (8).jpg" alt="Tricusp Diagnostics Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+        <!-- Track 02: Scrolling Reverse (Right) with Staggered Sequence -->
+        <div class="clients-marquee-track track-reverse" aria-label="Client logos marquee row 2">
+          <!-- Primary Group -->
+          <div class="clients-marquee-group is-reverse">
+            <a href="#contact" class="client-card" title="Partnered with Gyan World Class Smart School — Inquire with ByteTabs">
+              <img src="assest/images/client (5).jpg" alt="Gyan World Class Smart School Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with Sight Care Eye Hospital — Inquire with ByteTabs">
+              <img src="assest/images/client (6).jpg" alt="Sight Care Eye Hospital Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with Suvera Fresh — Inquire with ByteTabs">
+              <img src="assest/images/client (7).jpg" alt="Suvera Fresh Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with Tricusp Diagnostics — Inquire with ByteTabs">
+              <img src="assest/images/client (8).jpg" alt="Tricusp Diagnostics Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with NextGen CA — Inquire with ByteTabs">
+              <img src="assest/images/client (1).jpg" alt="NextGen CA Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with CEO Thoughts — Inquire with ByteTabs">
+              <img src="assest/images/client (2).jpg" alt="CEO Thoughts Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with Danlite Tools Technician — Inquire with ByteTabs">
+              <img src="assest/images/client (3).jpg" alt="Danlite Tools Technician Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" title="Partnered with RHC Multispeciality Hospital — Inquire with ByteTabs">
+              <img src="assest/images/client (4).jpg" alt="RHC Multispeciality Hospital Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Duplicate Group for Seamless Infinite Loop -->
+          <div class="clients-marquee-group is-reverse" aria-hidden="true">
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with Gyan World Class Smart School — Inquire with ByteTabs">
+              <img src="assest/images/client (5).jpg" alt="Gyan World Class Smart School Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with Sight Care Eye Hospital — Inquire with ByteTabs">
+              <img src="assest/images/client (6).jpg" alt="Sight Care Eye Hospital Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with Suvera Fresh — Inquire with ByteTabs">
+              <img src="assest/images/client (7).jpg" alt="Suvera Fresh Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with Tricusp Diagnostics — Inquire with ByteTabs">
+              <img src="assest/images/client (8).jpg" alt="Tricusp Diagnostics Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with NextGen CA — Inquire with ByteTabs">
+              <img src="assest/images/client (1).jpg" alt="NextGen CA Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with CEO Thoughts — Inquire with ByteTabs">
+              <img src="assest/images/client (2).jpg" alt="CEO Thoughts Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with Danlite Tools Technician — Inquire with ByteTabs">
+              <img src="assest/images/client (3).jpg" alt="Danlite Tools Technician Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+            <a href="#contact" class="client-card" tabindex="-1" title="Partnered with RHC Multispeciality Hospital — Inquire with ByteTabs">
+              <img src="assest/images/client (4).jpg" alt="RHC Multispeciality Hospital Logo" class="img-responsive client-logo-img" width="160" height="48" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- Clients Section End -->
+
+    <!-- Stats Banner Section Start -->
+    <section class="stats-banner-section" id="stats" aria-label="Key Performance Metrics">
+      <div class="container stats-container">
+        <div class="stats-grid">
+          
+          <!-- Stat 01: 100% client satisfaction -->
+          <div class="stat-item">
+            <div class="stat-value" data-spin-value="100%" aria-label="100%">
+              <span class="stat-fallback">100%</span>
+            </div>
+            <p class="stat-label">client satisfaction</p>
+          </div>
+
+          <!-- Stat 02: 200% SEO campaigns -->
+          <div class="stat-item">
+            <div class="stat-value" data-spin-value="200%" aria-label="200%">
+              <span class="stat-fallback">200%</span>
+            </div>
+            <p class="stat-label">SEO campaigns</p>
+          </div>
+
+          <!-- Stat 03: 50% organic traffic -->
+          <div class="stat-item">
+            <div class="stat-value" data-spin-value="50%" aria-label="50%">
+              <span class="stat-fallback">50%</span>
+            </div>
+            <p class="stat-label">organic traffic</p>
+          </div>
+
+          <!-- Stat 04: 24/7 customer support -->
+          <div class="stat-item">
+            <div class="stat-value" data-spin-value="24/7" aria-label="24/7">
+              <span class="stat-fallback">24/7</span>
+            </div>
+            <p class="stat-label">customer support</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Stats Banner Section End -->
+
+    <!-- Our Tech Stack Section Start -->
+    <section class="tech-stack-section" id="techStack" aria-label="Our Technology Stack">
+      <div class="container tech-stack-container">
+
+        <!-- Tech Stack Section Header (Centered Title Only) -->
+        <div class="tech-stack-header">
+          <h2 class="tech-stack-title">
+            Battle-Tested Technologies Engineered for Scale.
+          </h2>
+        </div>
+
+        <!-- Tech Stack Staggered Honeycomb Grid (Reference-Inspired Layout) -->
+        <div class="tech-stagger-wrap" id="techGrid">
+
+          <!-- Column 01 (3 Cards) -->
+          <div class="tech-stagger-col">
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for JavaScript Development">
+              <img src="assest/images/javascript.png" alt="JavaScript Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for .NET Core Development">
+              <img src="assest/images/dotnet.png" alt=".NET Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for WordPress & Headless CMS Development">
+              <img src="assest/images/wordpress.png" alt="WordPress Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Column 02 (4 Cards) -->
+          <div class="tech-stagger-col">
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Python Development">
+              <img src="assest/images/python.png" alt="Python Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Rust Development">
+              <img src="assest/images/rust.png" alt="Rust Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Java Development">
+              <img src="assest/images/java.png" alt="Java Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Ruby on Rails Development">
+              <img src="assest/images/ruby-on-rails.png" alt="Ruby on Rails Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Column 03 (3 Cards - Center) -->
+          <div class="tech-stagger-col">
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Swift & iOS Development">
+              <img src="assest/images/swift.png" alt="Swift Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for PHP Development">
+              <img src="assest/images/php.png" alt="PHP Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Modern JavaScript & Node Development">
+              <img src="assest/images/javascript.png" alt="JavaScript Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Column 04 (4 Cards) -->
+          <div class="tech-stagger-col">
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Full-Stack Rails Development">
+              <img src="assest/images/ruby-on-rails.png" alt="Ruby on Rails Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Modern WordPress Development">
+              <img src="assest/images/wordpress.png" alt="WordPress Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Enterprise .NET Architecture">
+              <img src="assest/images/dotnet.png" alt=".NET Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Native Mobile Swift Solutions">
+              <img src="assest/images/swift.png" alt="Swift Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Column 05 (3 Cards) -->
+          <div class="tech-stagger-col">
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Memory-Safe Rust Architecture">
+              <img src="assest/images/rust.png" alt="Rust Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Python AI & Backend Services">
+              <img src="assest/images/python.png" alt="Python Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+            <a href="#contact" class="tech-card" title="Partner with ByteTabs for Enterprise Java Services">
+              <img src="assest/images/java.png" alt="Java Logo" class="img-responsive tech-card-img" width="68" height="68" loading="lazy">
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Our Tech Stack Section End -->
+
+    <!-- Why Choose Section Start -->
+    <section class="why-choose-section" id="whyChoose" aria-label="Why Choose ByteTabs for Software Development">
+      <div class="container why-choose-container">
+
+        <!-- Section Header -->
+        <div class="why-choose-header text-center">
+          <h2 class="why-choose-title">
+            Why Choose ByteTabs for Software Development?
+          </h2>
+          <p class="why-choose-desc">
+            We engineer high-performance, enterprise-grade software solutions designed to scale reliably with your business growth.
+          </p>
+        </div>
+
+        <!-- 8-Card Grid (2 Rows of 4 Cards) -->
+        <div class="why-choose-grid">
+
+          <!-- Card 01: Enterprise Architecture (Brand Version 1: Gold) -->
+          <article class="why-choose-card why-card-v1">
+            <div class="why-card-inner">
+              <div class="why-card-icon-wrap" aria-hidden="true">
+                <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Enterprise Architecture</h3>
+              <p class="why-card-desc">
+                Clean, modular architectures crafted with zero technical debt, rigorous automated testing, and long-term production resilience.
+              </p>
+              <div class="why-card-badge">
+                <span class="why-card-num">01</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 02: High-Velocity Delivery (Brand Version 2: Orange) -->
+          <article class="why-choose-card why-card-v2">
+            <div class="why-card-inner">
+              <div class="why-card-icon-wrap" aria-hidden="true">
+                <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                  <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                  <path d="M9 12H4s.55-3.03 2-4.5c1.26-1.28 3-1.5 3-1.5"></path>
+                  <path d="M15 12v5s3.03-.55 4.5-2c1.28-1.26 1.5-3 1.5-3"></path>
+                </svg>
+              </div>
+              <h3 class="why-card-title">High-Velocity Delivery</h3>
+              <p class="why-card-desc">
+                Agile sprint rhythms, rapid prototyping, and automated CI/CD pipelines that turn product roadmaps into live software at record pace.
+              </p>
+              <div class="why-card-badge">
+                <span class="why-card-num">02</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 03: Resilient Scalability (Brand Version 1: Gold) -->
+          <article class="why-choose-card why-card-v1">
+            <div class="why-card-inner">
+              <div class="why-card-icon-wrap" aria-hidden="true">
+                <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Resilient Scalability</h3>
+              <p class="why-card-desc">
+                Cloud-native distributed systems, intelligent microservices, and elastic databases engineered to handle millions of concurrent users.
+              </p>
+              <div class="why-card-badge">
+                <span class="why-card-num">03</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 04: Bank-Grade Security (Brand Version 2: Orange) -->
+          <article class="why-choose-card why-card-v2">
+            <div class="why-card-inner">
+              <div class="why-card-icon-wrap" aria-hidden="true">
+                <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="M9 12l2 2 4-4"></path>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Bank-Grade Security</h3>
+              <p class="why-card-desc">
+                Zero-trust engineering, continuous vulnerability testing, OWASP compliance, and multi-tier encryption safeguarding your critical IP.
+              </p>
+              <div class="why-card-badge">
+                <span class="why-card-num">04</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 05: Dedicated Product Ownership (Brand Version 1: Gold) -->
+          <article class="why-choose-card why-card-v1">
+            <div class="why-card-inner">
+              <div class="why-card-icon-wrap" aria-hidden="true">
+                <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Dedicated Product Ownership</h3>
+              <p class="why-card-desc">
+                Direct access to senior engineering leads who champion your business goals and maintain seamless accountability at every milestone.
+              </p>
+              <div class="why-card-badge">
+                <span class="why-card-num">05</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 06: Transparent Engineering (Brand Version 2: Orange) -->
+          <article class="why-choose-card why-card-v2">
+            <div class="why-card-inner">
+              <div class="why-card-icon-wrap" aria-hidden="true">
+                <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                  <line x1="14" y1="4" x2="10" y2="20"></line>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Transparent Engineering</h3>
+              <p class="why-card-desc">
+                Complete source code ownership, clean pull-request documentation, observable CI/CD builds, and weekly interactive demo sessions.
+              </p>
+              <div class="why-card-badge">
+                <span class="why-card-num">06</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 07: AI & Cloud Modernization (Brand Version 1: Gold) -->
+          <article class="why-choose-card why-card-v1">
+            <div class="why-card-inner">
+              <div class="why-card-icon-wrap" aria-hidden="true">
+                <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                  <polyline points="13 11 11 14 14 14 12 17"></polyline>
+                </svg>
+              </div>
+              <h3 class="why-card-title">AI & Cloud Modernization</h3>
+              <p class="why-card-desc">
+                Seamlessly integrating cutting-edge LLMs, automated data workflows, and modern cloud architectures to future-proof your digital operations.
+              </p>
+              <div class="why-card-badge">
+                <span class="why-card-num">07</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 08: Post-Launch SLA Support (Brand Version 2: Orange) -->
+          <article class="why-choose-card why-card-v2">
+            <div class="why-card-inner">
+              <div class="why-card-icon-wrap" aria-hidden="true">
+                <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Post-Launch SLA Support</h3>
+              <p class="why-card-desc">
+                24/7 proactive infrastructure health monitoring, zero-downtime rollouts, automated database backups, and guaranteed uptime SLAs.
+              </p>
+              <div class="why-card-badge">
+                <span class="why-card-num">08</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Why Choose Section End -->
+
+    <!-- Brand Partners Section Start -->
+    <section class="brand-partners-section" id="brandPartners" aria-label="Our Brand Partners">
+      <div class="container brand-partners-container">
+
+        <!-- Section Header (Main Title Only) -->
+        <div class="brand-partners-header">
+          <h2 class="brand-partners-title">Our Brand Partners</h2>
+        </div>
+
+        <!-- Brand Partners Image Grid (1 Row of 5) -->
+        <div class="brand-partners-grid">
+          <div class="brand-partner-card">
+            <img src="assest/images/brandpartner-1.jpg" alt="Brand Partner Razorpay" class="img-responsive brand-partner-img" width="200" height="100" loading="lazy">
+          </div>
+          <div class="brand-partner-card">
+            <img src="assest/images/brandpartner-2.png" alt="Brand Partner Samtroh" class="img-responsive brand-partner-img" width="200" height="100" loading="lazy">
+          </div>
+          <div class="brand-partner-card">
+            <img src="assest/images/brandpartner-1.jpg" alt="Brand Partner Razorpay" class="img-responsive brand-partner-img" width="200" height="100" loading="lazy">
+          </div>
+          <div class="brand-partner-card">
+            <img src="assest/images/brandpartner-2.png" alt="Brand Partner Samtroh" class="img-responsive brand-partner-img" width="200" height="100" loading="lazy">
+          </div>
+          <div class="brand-partner-card">
+            <img src="assest/images/brandpartner-1.jpg" alt="Brand Partner Razorpay" class="img-responsive brand-partner-img" width="200" height="100" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Brand Partners Section End -->
+
+  </main>
+
+  <!-- Footer Section Start -->
+  <footer class="site-footer" id="siteFooter" aria-label="Site Footer">
+    <div class="container footer-container">
+      
+      <!-- Footer Main 4-Column Grid -->
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand Logo, Description & Social Icons -->
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="footer-logo-link" aria-label="ByteTabs Homepage" title="ByteTabs Homepage">
+            <img src="assest/images/logo-icon.png" alt="ByteTabs Logo Icon" class="img-responsive footer-logo-icon" width="36" height="36" loading="lazy">
+            <span class="footer-logo-text"><span class="logo-byte">Byte</span><span class="logo-tabs">Tabs</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            High-end digital product studio engineering scalable web architectures, modern cloud platforms, and bespoke software solutions that accelerate business growth.
+          </p>
+          <div class="footer-socials" aria-label="Social Media Links">
+            <a href="https://linkedin.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="ByteTabs on LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="ByteTabs on GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" title="ByteTabs on Twitter">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="ByteTabs on Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-nav-link">Home</a></li>
+            <li><a href="#services" class="footer-nav-link">Services</a></li>
+            <li><a href="#techStack" class="footer-nav-link">Tech Stack</a></li>
+            <li><a href="#whyChoose" class="footer-nav-link">Why Choose Us</a></li>
+            <li><a href="#brandPartners" class="footer-nav-link">Brand Partners</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Services</h3>
+          <ul class="footer-links-list">
+            <li><a href="#services" class="footer-nav-link">Website & App Development</a></li>
+            <li><a href="#services" class="footer-nav-link">ERP & SaaS Solutions</a></li>
+            <li><a href="#services" class="footer-nav-link">SEO & Google Marketing</a></li>
+            <li><a href="#services" class="footer-nav-link">Performance Marketing</a></li>
+            <li><a href="#services" class="footer-nav-link">Social Media Marketing</a></li>
+            <li><a href="#services" class="footer-nav-link">Influencer Marketing</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Details -->
+        <div class="footer-col footer-col-contact">
+          <h3 class="footer-col-title">Contact Details</h3>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <div class="footer-contact-meta">
+                <span class="footer-contact-label">Email Us</span>
+                <a href="mailto:hello@bytetabs.com" class="footer-contact-link">hello@bytetabs.com</a>
+              </div>
+            </li>
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <div class="footer-contact-meta">
+                <span class="footer-contact-label">Call Us</span>
+                <a href="tel:+916299090075" class="footer-contact-link">+91 6299090075</a>
+              </div>
+            </li>
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+              <div class="footer-contact-meta">
+                <span class="footer-contact-label">Location</span>
+                <span class="footer-contact-text">Jamia Nagar, Okhla, New Delhi</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar (Copyright & Legal) -->
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">
+          &copy; 2026 ByteTabs. All rights reserved.
+        </p>
+        <div class="footer-legal-links">
+          <a href="#privacy" class="footer-legal-link">Privacy Policy</a>
+          <span class="footer-legal-sep" aria-hidden="true">&bull;</span>
+          <a href="#terms" class="footer-legal-link">Terms of Service</a>
+          <span class="footer-legal-sep" aria-hidden="true">&bull;</span>
+          <a href="#cookies" class="footer-legal-link">Cookie Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- External Libraries (GSAP Core + ScrollTrigger) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Site Script -->
+  <script src="assest/js/scrip.js"></script>
+</body>
+</html>
